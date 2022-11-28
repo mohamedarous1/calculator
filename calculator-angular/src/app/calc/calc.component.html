@@ -1,0 +1,43 @@
+<section>
+    <div class = "calculator">
+        <input id = "display" value = "{{display}}"  type = "text" disabled />
+        <div>
+            <div >
+            <button class = "button"id = "functions" (click)="set_operation('percintile')" >%</button>
+            <button class = "button"id = "functions" (click)="clear()">CE</button>
+            <button class = "button"id = "functions" (click)="clear()">C</button>
+            <button class = "button"id = "functions" (click)="del()">⌫</button>
+            </div>
+            <div >
+            <button class = "button"id = "functions" (click)="set_operation('multi-inverse')">1/x</button>
+            <button class = "button"id = "functions" (click)="set_operation('square')">X²</button>
+            <button class = "button"id = "functions" (click)="set_operation('sqrt')">sqrt(x)</button>
+            <button class = "button"id = "functions" (click)="set_operation('division')">/</button>
+            </div>
+            <div>
+            <button class = "button" (click)="setnum(7)">7</button>
+            <button class = "button" (click)="setnum(8)">8</button>
+            <button class = "button" (click)="setnum(9)">9</button>
+            <button class = "button" id = "functions" (click)="set_operation('multiplication')">x</button>
+            </div>
+            <div>
+            <button class = "button"(click)="setnum(4)">4</button>
+            <button class = "button"(click)="setnum(5)">5</button>
+            <button class = "button"(click)="setnum(6)">6</button>
+            <button class = "button" id = "functions" (click)="set_operation('sub')">-</button>
+            </div>
+            <div>
+            <button class = "button" (click)="setnum(1)">1</button>
+            <button class = "button"(click)="setnum(2)">2</button>
+            <button class = "button"(click)="setnum(3)">3</button>
+            <button class = "button" id = "functions" (click)="set_operation('add')">+</button>
+            </div>
+            <div>
+            <button class = "button" (click)="set_operation('invert')" >+/-</button>
+            <button class = "button" (click)="setnum(0)" >0</button>
+            <button class = "button"  (click)="set_dot()">.</button>
+            <button class = "button" id = "equal" (click)="set_operation('equal')">=</button>
+            </div>
+        </div>    
+    </div>
+</section>
